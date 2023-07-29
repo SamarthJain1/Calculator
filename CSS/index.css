@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000033;
+}
+
+input {
+    width: 298px;
+    font-size: 30px;
+    height: auto;
+    padding: 50px;
+    margin: 15px;
+    color: black;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.btn {
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 14px;
+    width: 80px;
+    background-color: #f0dadc;
+    transition: transform 0.01s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.calculator {
+    background-color: #085e72;
+    padding: 25px;
+    width: 430px;
+    margin: auto;
+    /* margin-top: 50px; */
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    margin: 30px auto;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #320c4d, #f0706a, #8315bc, #4e0d70);
+    background-size: 800% 800%;
+    animation: gradient 45s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 400px;
+        padding: 15px;
+    }
+
+    input {
+        width: 270px;
+        padding: 46px;
+        margin: 20px;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        width: 330px;
+        padding: 20px 10px;
+    }
+
+    input {
+        width: 260px;
+        padding: 40px 10px;
+        margin: 25px;
+        font-size: 32px;
+    }
+
+    .btn {
+        font-size: 32px;
+        padding: 5px;
+        border-radius: 15px;
+        margin: 10px;
+        width: 70px;
+    }
+}
